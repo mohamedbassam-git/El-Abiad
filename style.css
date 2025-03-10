@@ -28,9 +28,6 @@ header:hover {
     box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.475);
 }
 
-.my-photo {
-}
-
 .logo {
     color: #fff;
     text-decoration: none;
@@ -258,6 +255,8 @@ section {
     padding: 1em;
     display: flex;
     justify-content: center;
+    letter-spacing: 0.5px;
+    
 }
 
 .footer-title {
@@ -270,10 +269,30 @@ section {
     color: #1e3a8a;
 }
 
+@media (max-width: 1200px) {
+    header {
+        width: 90%;
+        padding: 10px 20px;
+    }
+
+    section {
+        padding: 80px 50px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media (max-width: 768px) {
     header {
-        padding: 10px 20px;
-        width: 90%;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        border-radius: 20px;
+        max-height: 80px;
+        font-size: 0.8em;
     }
 
     .navigation {
@@ -282,83 +301,67 @@ section {
     }
 
     .navigation a {
-        padding: 10px 3px;
-        font-size: 0.7em;
+        padding: 10px;
+        font-size: 1em;
     }
 
     section {
-        padding: 50px 20px;
-    }
-
-    .main {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .title {
-        font-size: 1.8em;
-    }
-
-    .social-icons {
-        display: flex;
-        justify-content: center;  
-        align-items: center;      
-        width: 100%;
-        padding-top: 15px;       
-    }
-    .social-icons a {
-        padding: 0 10px;  
-        font-size: 1.5em; 
-    }
-
-    .content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 90%;
-    }
-
-    .education-card {
-        width: 90%;
-    }
-
-    #EM {
-        font-size: 0.7em;
-    }
-
-    #PH {
-        font-size: 0.9em;
-    }
-    .name {
-        font-size: 0.7em;
-    }
-}
-
-@media (max-width: 1024px) {
-    header {
-        width: 85%;
-        padding: 10px 30px;
-    }
-
-    section {
-        padding: 80px 50px;
+        padding: 60px 20px;
     }
 
     .main h2 span {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
-    .title {
-        font-size: 2em;
+    .topbottom {
+        font-size: 1.5em;
     }
 
     .card {
-        width: 45%;
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 1.1em;
+    }
+
+    .navigation a {
+        font-size: 1em;
+        padding-left: 5px;
+        padding-right: 2px;
+    }
+
+    .main h2 span {
+        font-size: 1.2em;
+    }
+
+    .topbottom {
+        font-size: 1.2em;
+    }
+
+    .main-btn {
+        font-size: 1em;
+        padding: 0.7em 1.5em;
+    }
+
+    .social-icons a {
+        font-size: 1.5em;
+        padding-right: 15px;
     }
 
     .education-card {
-        width: 45%;
+        width: 90%;
+    }
+
+    .footer-title {
+        font-size: 1em;
     }
 }
