@@ -91,6 +91,10 @@ section {
     transition: 0.7s ease;
 }
 
+#youtube-text {
+    font-size: 25px;
+}
+
 .main-btn:hover {
     background-color: #FFC107;
     transform: scale(1.1);
@@ -176,8 +180,9 @@ section {
     border-radius: 10px;
     margin: 20px;
     transition: 0.7s ease;
-
 }
+
+
 
 .education-card:hover {
     transform: scale(1.05);
@@ -192,6 +197,60 @@ section {
 .school-image img {
     width: 100%;
 }
+
+
+#channel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border: 5px solid #d4af37; /* Gold border */
+    min-height: 16em;
+    width: 26em;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#channel:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.channel-logo img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 50%;
+    border: 4px solid #d4af37; /* Gold frame */
+    transition: 0.3s ease;
+}
+
+.channel-logo img:hover {
+    transform: rotate(3deg) scale(1.05);
+}
+
+#channel h2 {
+    font-size: 1.8em;
+    color: #222;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+#channel p {
+    font-size: 1.1em;
+    color: #444;
+    margin-top: 5px;
+    max-width: 90%;
+    line-height: 1.4;
+}
+
+
+
 
 #contact .social-icons {
     display: flex;
@@ -255,8 +314,8 @@ section {
     padding: 1em;
     display: flex;
     justify-content: center;
-    letter-spacing: 0.5px;
-    
+    letter-spacing: 0.5px;    
+    text-align: center;
 }
 
 .footer-title {
@@ -265,7 +324,7 @@ section {
 }
 
 .footer-title span {
-    font-size: 1.2em;
+    font-size: 0.8em;
     color: #1e3a8a;
 }
 
